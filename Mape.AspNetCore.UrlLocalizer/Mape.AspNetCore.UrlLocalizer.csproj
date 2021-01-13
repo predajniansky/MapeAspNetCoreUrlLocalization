@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Mape.AspNetCore.UrlLocalizer</AssemblyName>
+    <RootNamespace>Mape.AspNetCore.UrlLocalizer</RootNamespace>
+    <Authors>Marek Predajniansky</Authors>
+    <Company />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  
+</Project>
