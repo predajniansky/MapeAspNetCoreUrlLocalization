@@ -11,7 +11,7 @@ For example yourweb/home/contact is translated to
 Example contains complete project with url and view localization
 
 
-## 1. Quick Start ASP.NET Core 3.0
+## Quick Start ASP.NET Core 3.0
 
 Modify Startup.cs
 ```
@@ -131,3 +131,7 @@ Add translation to Controller - add LocalizedName atribure
       
       return View();
     }
+```
+Add tag helper to _ViewImports.cshtml
+```
+@addTagHelper *, Mape.AspNetCore.UrlLocalizer
