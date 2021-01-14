@@ -1,6 +1,6 @@
 # MapeAspNetCoreUrlLocalization
 
-The package allows you to locate URLs. The language is automatically detected from the URL.
+The package allows you to localize URLs. The language is automatically detected from the URL.
 </br>
 </br>
 For example yourweb/home/contact is translated to

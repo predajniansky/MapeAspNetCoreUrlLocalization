@@ -1,15 +1,29 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFrameworks>netcoreapp3.1;net5.0</TargetFrameworks>
     <AssemblyName>Mape.AspNetCore.UrlLocalizer</AssemblyName>
     <RootNamespace>Mape.AspNetCore.UrlLocalizer</RootNamespace>
     <Authors>Marek Predajniansky</Authors>
     <Company />
+    <RepositoryUrl>https://github.com/predajniansky/MapeAspNetCoreUrlLocalization</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/predajniansky/MapeAspNetCoreUrlLocalization</PackageProjectUrl>
+    <Copyright>(c) Marek Predajniansky</Copyright>
+    <Description>The library allows you to localize URLs. The language is automatically detected from the URL.</Description>
+    <PackageLicenseFile>licence.txt</PackageLicenseFile>
+    <PackageTags>AspNet Core Url Localization Globalization Translation</PackageTags>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\licence.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
   
 </Project>
