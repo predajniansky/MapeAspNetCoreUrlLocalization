@@ -1,5 +1,14 @@
 # MapeAspNetCoreUrlLocalization
 
+[![Nuget](https://img.shields.io/nuget/v/Mape.AspNetCore.UrlLocalizer.svg)](https://www.nuget.org/packages/Mape.AspNetCore.UrlLocalizer/) [![Nuget](https://img.shields.io/nuget/dt/Mape.AspNetCore.UrlLocalizer.svg)](https://www.nuget.org/packages/Mape.AspNetCore.UrlLocalizer/) 
+
+
+Install:
+
+    PM> Install-Package Mape.AspNetCore.UrlLocalizer
+
+</br>
+
 The package allows you to localize URLs. The language is automatically detected from the URL.
 </br>
 </br>
