@@ -36,7 +36,7 @@ namespace Example
 
       services.AddSingleton<ITranslationDatabase>(p => new TranslationDatabase(cultures));
       services.AddSingleton<TranslationTransformer>();
-
+      
       //directory with resource files
       services.AddLocalization(options => options.ResourcesPath = "Resources");
 
