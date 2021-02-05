@@ -135,11 +135,11 @@ Add translation to Controller - add LocalizedName atribure
 Add tag helper to _ViewImports.cshtml
 ```
 @addTagHelper *, Mape.AspNetCore.UrlLocalizer
-</br>
-</br>
-Add Html and Url extensions to _ViewImports.cshtml</br>
+```
+Add Html and Url extensions to _ViewImports.cshtml
+```
 @using Mape.AspNetCore.UrlLocalizer</br>
-</br>
+```
 Using Html and Url extensions in views</br>
 ```
 @inject ITranslationDatabase translation
