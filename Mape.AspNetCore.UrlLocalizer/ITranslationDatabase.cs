@@ -37,6 +37,6 @@ namespace Mape.AspNetCore.UrlLocalizer
     /// <param name="controller">translated culture</param>
     /// <param name="action">translated action</param>
     /// <returns>arry of original strings [area, controller, action]</returns>
-    Task<string[]> Resolve(string lang, string area, string controller, string action);
+    Task<string[]> Resolve(string lang, string area, string controller, string action, ICollection<string> queryPrms);
   }
 }

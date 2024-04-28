@@ -72,5 +72,37 @@ namespace Mape.AspNetCore.UrlLocalizer
        controller ,  values ,
        protocol ,  host ,  fragment );
     }
+
+        public static string? LocalizedAction(this IUrlHelper helper, ITranslationDatabase? translationDatabase, string? action, string? controller)
+        {
+            if (translationDatabase != null
+                && !string.IsNullOrEmpty(controller)
+                && !string.IsNullOrEmpty(action))
+            {
+                //kontrola ci je Home/Index
+
+
+
+
+
+
+                bool isDefaultRoute = "Home".Equals(controller, StringComparison.InvariantCultureIgnoreCase)
+                  && "Index".Equals(action, StringComparison.InvariantCultureIgnoreCase);
+
+                if (!isDefaultRoute)
+                {
+                    var culture = System.Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName;
+
+                    var trans = translationDatabase.GetTranslation(culture, null, controller, action).Result;
+
+                    controller = trans[1];
+                    action = trans[2];
+                }
+            }
+
+            return helper.Action(action,
+            controller);
+        }
+
   }
 }

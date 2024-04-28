@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp3.1;net5.0</TargetFrameworks>
+    <TargetFrameworks>net8.0</TargetFrameworks>
     <AssemblyName>Mape.AspNetCore.UrlLocalizer</AssemblyName>
     <RootNamespace>Mape.AspNetCore.UrlLocalizer</RootNamespace>
     <Authors>Marek Predajniansky</Authors>
@@ -13,19 +12,17 @@
     <PackageLicenseFile>licence.txt</PackageLicenseFile>
     <PackageTags>AspNet Core Url Localization Globalization Translation</PackageTags>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </PropertyGroup>
-
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
-
   <ItemGroup>
     <None Include="..\licence.txt">
       <Pack>True</Pack>
-      <PackagePath></PackagePath>
+      <PackagePath>
+      </PackagePath>
     </None>
   </ItemGroup>
-  
 </Project>

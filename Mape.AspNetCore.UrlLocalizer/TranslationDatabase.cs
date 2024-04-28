@@ -68,7 +68,7 @@ namespace Mape.AspNetCore.UrlLocalizer
                 var mItem = new TranslationDatabaseItem()
                 {
                   Language = attr.Language.ToLowerInvariant(),
-                  Name = attr.Name.ToLowerInvariant(),
+                  Name = string.IsNullOrEmpty(attr.Name) ? string.Empty : attr.Name.ToLowerInvariant(),
                   IsFullName = attr.IsFullName,
                   OriginalName = method.Name.ToLowerInvariant()
                 };
@@ -125,7 +125,7 @@ namespace Mape.AspNetCore.UrlLocalizer
     /// <param name="controller">original controller</param>
     /// <param name="action">original action</param>
     /// <returns>array of translated strings [area, controller, action]</returns>
-    public async Task<string[]> Resolve(string lang, string area, string controller, string action)
+    public async Task<string[]> Resolve(string lang, string area, string controller, string action, ICollection<string> queryPrms)
     {
       string locController = controller;
       string locAction = action;
@@ -156,6 +156,7 @@ namespace Mape.AspNetCore.UrlLocalizer
             {
               locAction = aItem.OriginalName;
             }
+
           }
 
         }

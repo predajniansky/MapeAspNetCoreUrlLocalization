@@ -32,7 +32,7 @@ namespace Mape.AspNetCore.UrlLocalizer
         language = (string)values["culture"];
 
       //translate strigns
-      var trans = await _translationDatabase.Resolve(language, area, controller, action);
+      var trans = await _translationDatabase.Resolve(language, area, controller, action, httpContext.Request.Query.Keys);
 
       if (trans != null)
       {
